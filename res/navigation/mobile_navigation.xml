@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.navegationdrawer.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.navegationdrawer.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.navegationdrawer.ui.slideshow.SlideshowFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.navegationdrawer.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="com.example.navegationdrawer.RegistroFragment"
+        android:label="Registrar Usuario"
+        tools:layout="@layout/fragment_registro" />
+    <fragment
+        android:id="@+id/actualizarFragment"
+        android:name="com.example.navegationdrawer.ActualizarFragment"
+        android:label="Actualizar Usuario"
+        tools:layout="@layout/fragment_actualizar" />
+    <fragment
+        android:id="@+id/actualizarSensorFragment"
+        android:name="com.example.navegationdrawer.ActualizarSensorFragment"
+        android:label="Actualizar Sensor"
+        tools:layout="@layout/fragment_actualizar_sensor" />
+    <fragment
+        android:id="@+id/listaSensoresFragment"
+        android:name="com.example.navegationdrawer.ListaSensoresFragment"
+        android:label="Lista Sensores"
+        tools:layout="@layout/fragment_lista_sensores" />
+    <fragment
+        android:id="@+id/consultarSensorFragment"
+        android:name="com.example.navegationdrawer.ConsultarSensorFragment"
+        android:label="Consultar Sensor"
+        tools:layout="@layout/fragment_consultar_sensor" />
+    <fragment
+        android:id="@+id/sessionFragment"
+        android:name="com.example.navegationdrawer.SessionFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_session" />
+    <activity
+        android:id="@+id/mainActivityLogin"
+        android:name="com.example.navegationdrawer.MainActivityLogin"
+        android:label="activity_main_login"
+        tools:layout="@layout/activity_main_login" />
+</navigation>

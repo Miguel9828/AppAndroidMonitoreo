@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+//edicion de menus items
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tablero" />
+        <item
+            android:id="@+id/dashboardFragment"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Dashboard" />
+    </group>
+    <item android:title="Usuarios">
+        <menu>
+            <item
+                android:id="@+id/registroFragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Registrar Usuario" />
+            <item
+                android:id="@+id/actualizarFragment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Actualizar Usuario" />
+        </menu>
+    </item>
+    <item android:title="Aparatos">
+        <menu>
+            <item
+                android:id="@+id/actualizarSensorFragment"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Actualizar Sensor" />
+            <item
+                android:id="@+id/listaSensoresFragment"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Consultar Lista Sensores" />
+            <item
+                android:id="@+id/consultarSensorFragment"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Consultar Sensor" />
+        </menu>
+    </item>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/mainActivityLogin"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Salir" />
+        </menu>
+    </item>
+
+</menu>
